@@ -20,18 +20,6 @@ require '/home/bitrix/dev/bx-kafka/src/MessageHandler/PrescoringMessageHandler.p
 
 $conf = new Conf();
 
-/* 
-$conf->set('metadata.broker.list', "10.124.32.37:9092,10.124.32.38:9092,10.124.32.39:9092");
-$conf->set('partition.assignment.strategy', 'range,roundrobin');
-// 10.124.32.37:9092,10.124.32.38:9092,10.124.32.39:9092
-$conf->set('enable.auto.commit', 'false'); // Управляйте оффсетами вручную
-$conf->set('auto.offset.reset', 'earliest'); // Чтение сообщений с самого начала, если оффсет не найден
-$conf->set('session.timeout.ms', '30000'); // 30 секунд
-$conf->set('max.poll.interval.ms', '600000'); // 10 минут
-
-// $conf->set('log_level', (string) LOG_DEBUG);
-// $conf->set('debug', 'all');
-*/
 $conf->set('group.id',                  $kafkaConfig['group_id_prescoring'] );
 $conf->set('metadata.broker.list',      implode(',', $kafkaConfig['brokers']) );
 $conf->set('auto.offset.reset',         $kafkaConfig['offset_reset'] );

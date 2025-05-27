@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="test-bitrix.uzum.com" remoteFilesAllowedToDisappearOnAutoupload="false" showExcludedInSync="true">
+    <serverData>
+      <paths name="test-bitrix.uzum.com">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/dev" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/www/bitrix/php_interface/Irbisz" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

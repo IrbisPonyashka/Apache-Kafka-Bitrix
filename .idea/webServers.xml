@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="da7c3313-8aa6-4fd9-9c21-ce9de00c6228" name="test-bitrix.uzum.com" url="https://test-bitrix.uzum.com/">
+        <fileTransfer rootFolder="/home/bitrix" accessType="SFTP" host="10.124.32.43" port="22" sshConfigId="7ccd6c79-5b56-40d1-916d-3aeb3f56303d" sshConfig="developer@10.124.32.43:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

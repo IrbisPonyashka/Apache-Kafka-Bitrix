@@ -1,0 +1,16 @@
+{
+    "name": "uzum/ismail",
+    "description": "dev",
+    "type": "php-plugin",
+    "autoload": {
+        "psr-4": {
+            "Uzum\\Ismail\\": "src/",
+            "Bitrix\\": "/home/bitrix/www/bitrix/modules/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "monolog/monolog": "^3.9"
+    }
+}

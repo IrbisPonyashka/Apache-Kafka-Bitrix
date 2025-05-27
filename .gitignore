@@ -1,0 +1,3 @@
+/bx-kafka/logs/*
+/bx-kafka/vendor/
+/bx-kafka/config/kafka.php

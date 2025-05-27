@@ -1,4 +1,4 @@
-Сервисы для работы с демоном на PHP. Сам скрипт запускает конфиг потребителя Apache Kafka для прослушивания топиков [test-from-uauto-to-bitrix, test-from-uauto-prescoring-to-bitrix, test-from-uauto-agent-to-bitrix].
+Сервисы для работы с демоном на PHP. Сам скрипт запускает конфиг потребителя Apache Kafka для прослушивания топиков [test-from-service-to-bx, test-from-service-apple-to-bx, test-from-service-human-to-bx].
 
 комманды:
  systemctl --user daemon-reload
@@ -11,9 +11,9 @@
 *Сами сервисы находится в /home/bitrix/.config/systemd/user
 
 Скрипты-файлы потребителей
-    /home/bitrix/dev/bx-kafka/consumers/autoConsumer.php - конфиг потребителя test-from-uauto-to-bitrix
-    /home/bitrix/dev/bx-kafka/consumers/prescoringConsumer.php - конфиг потребителя test-from-uauto-prescoring-to-bitrix
-    /home/bitrix/dev/bx-kafka/consumers/agentConsumer.php - конфиг потребителя test-from-uauto-agent-to-bitrix
+    /home/bitrix/dev/bx-kafka/consumers/autoConsumer.php - конфиг потребителя test-from-service-to-bx
+    /home/bitrix/dev/bx-kafka/consumers/prescoringConsumer.php - конфиг потребителя test-from-service-apple-to-bx
+    /home/bitrix/dev/bx-kafka/consumers/agentConsumer.php - конфиг потребителя test-from-service-human-to-bx
 
-Скрипты-файлы потребителей на топик test-from-uauto-to-bitrix
+Скрипты-файлы потребителей на топик test-from-service-to-bx
  - /home/bitrix/www/bitrix/php_interface/micros/lib/onDeal.php - скрипт установлен в обработчик события сделок
